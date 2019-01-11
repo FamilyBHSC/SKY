@@ -11,7 +11,7 @@ from googletrans import Translator
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, pafy, asyncio, timeago, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pyimgflip, pytz, urllib, urllib3, urllib.parse, traceback, atexit, wikipedia
 import pyimgflip
-
+#========================
 loop = asyncio.get_event_loop()
 
 with open('token.json', 'r') as bolo:
@@ -30,17 +30,15 @@ else:
 pin['token'] = client.authToken
 with open('token.json', 'w') as fp:
     json.dump(pin, fp, sort_keys=True, indent=4)
-# Batas script===========login=asis=====
-
+# =====================================
 clientMid = client.profile.mid
 clientProfile = client.getProfile()
 clientSettings = client.getSettings()
 clientPoll = OEPoll(client)
 
-
-KAYS = [client]
+DHENZA = [client]
 BOT = [clientMid]
-#Batas script
+#=====================================
 msg_dict = {}
 botStart = time.time()
 imagesOpen = codecs.open("image.json","r","utf-8")
@@ -461,44 +459,47 @@ def helpmessage():
         key = key.title()
     else:
         key = ''
-    helpMessage =   "===>[[⚫Help BoT⚫]]<===" + "\n\n" + \
-                    key + "🔜 Help" + "\n" + \
-                    key + "🔜 Help Trans" + "\n" + \
-                    key + "🔜 Help Media" + "\n" + \
-                    key + "🔜 Help Settings" + "\n" + \
-                    key + "🔜 Help Group" + "\n" + \
-                    key + "🔜 Help Bot" + "\n" + \
-                    key + "🔜 Reboot" + "\n" + \
-                    key + "🔜 Runtime" + "\n" + \
-                    key + "🔜 Speed" + "\n" + \
-                    key + "🔜 Settings" + "\n" + \
-                    "🔜 MyKey" + "\n" + \
-                    "🔜 SetKey「On/Off」" + "\n" + \
-                    "🔜 Sb「On/Off」" + "\n" + \
-                    key + "🔜 Me" + "\n" + \
-                    key + "🔜 Myinfo" + "\n" + \
-                    key + "🔜 Mymid" + "\n" + \
-                    key + "🔜 Myname" + "\n" + \
-                    key + "🔜 Mybio" + "\n" + \
-                    key + "🔜 Mypicture" + "\n" + \
-                    key + "🔜 Myvideoprofile" + "\n" + \
-                    key + "🔜 Mycover" + "\n" + \
-                    key + "🔜 Contact「Mention」" + "\n" + \
-                    key + "🔜 Mid「Mention」" + "\n" + \
-                    key + "🔜 Name「Mention」" + "\n" + \
-                    key + "🔜 Bio「Mention」" + "\n" + \
-                    key + "🔜 Picture「Mention」" + "\n" + \
-                    key + "🔜 Videoprofile「Mention」" + "\n" + \
-                    key + "🔜 Cover「Mention」" + "\n" + \
-                    key + "🔜 Myrestore" + "\n" + \
-                    key + "🔜 Backup" + "\n" + \
-                    key + "🔜 Rejectall" + "\n" + \
-                    key + "🔜 Myticket" + "\n" + \
-                    key + "🔜 Bye me" + "\n" + \
-                    key + "🔜 Rechat" + "\n" + \
-                    key + "🔜 Refresh" + "\n" + \
-                    key + "?? Tagall" + "\n" + \
-                    "==>⚫ line.me/ti/p/~zainal_ariv ⚫<=="
+    helpMessage =   "⚔⚔⚔Hᴇʟᴘ ʙᴏᴛˢᵏ⚔⚔⚔" + "\n\n" + \
+                    key + "⚅ Help" + "\n" + \
+                    key + "⚅ Help Trans" + "\n" + \
+                    key + "⚅ Help Media" + "\n" + \
+                    key + "⚅ Help Settings" + "\n" + \
+                    key + "⚅ Help Group" + "\n" + \
+                    key + "⚅ Help Bot" + "\n" + \
+                    key + "⚅ Reboot" + "\n" + \
+                    key + "⚅ Runtime" + "\n" + \
+                    key + "⚅ Speed" + "\n" + \
+                    key + "⚅ Settings" + "\n" + \
+                    key + "⚅ MyKey" + "\n" + \
+                    key + "⚅ SetKey「On/Off」" + "\n" + \
+                    key + "⚅ Sb「On/Off」" + "\n" + \
+                    key + "⚅ Me" + "\n" + \
+                    key + "⚅ Myinfo" + "\n" + \
+                    key + "⚅ Gift" + "\n" + \
+                    key + "⚅ Mymid" + "\n" + \
+                    key + "⚅ Myname" + "\n" + \
+                    key + "⚅ Mybio" + "\n" + \
+                    key + "⚅ Mypicture" + "\n" + \
+                    key + "⚅ Myvideoprofile" + "\n" + \
+                    key + "⚅ Mycover" + "\n" + \
+                    key + "⚅ Contact「Mention」" + "\n" + \
+                    key + "⚅ Mid「Mention」" + "\n" + \
+                    key + "⚅ Name「Mention」" + "\n" + \
+                    key + "⚅ Bio「Mention」" + "\n" + \
+                    key + "⚅ Picture「Mention」" + "\n" + \
+                    key + "⚅ Videoprofile「Mention」" + "\n" + \
+                    key + "⚅ Cover「Mention」" + "\n" + \
+                    key + "⚅ Myrestore" + "\n" + \
+                    key + "⚅ Backup" + "\n" + \
+                    key + "⚅ Rejectall" + "\n" + \
+                    key + "⚅ Myticket" + "\n" + \
+                    key + "⚅ Byee" + "\n" + \
+                    key + "⚅ Bye all" + "\n" + \
+                    key + "⚅ Rechat" + "\n" + \
+                    key + "⚅ Refresh" + "\n" + \
+                    key + "⚅ Tagall" + "\n" + \
+                    key + "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+                    "http://line.me/ti/p/~teambotprotect"
     return helpMessage
 
 def helpsettings():
@@ -506,27 +507,36 @@ def helpsettings():
         key = settings['keyCommand']
     else:
         key = ''
-    helpSettings =  "===>[[Help Settings]]<===" + "\n" + \
-                          key + "🔜 Add「On/Off」" + "\n" + \
-                          key + "🔜 Join「On/Off」" + "\n" + \
-                          key + "🔜 Ticket「On/Off」" + "\n" + \
-                          key + "🔜 Leave「On/Off」" + "\n" + \
-                          key + "🔜 Read「On/Off」" + "\n" + \
-                          key + "🔜 Respon「On/Off」" + "\n" + \
-                          key + "🔜 Contact「On/Off」" + "\n" + \
-                          key + "🔜 Post「On/Off」" + "\n" + \
-                          key + "🔜 Sticker「On/Off」" + "\n" + \
-                          key + "🔜 Unsend「On/Off」" + "\n" + \
-                          key + "🔜 Sider「On/Off」" + "\n" + \
-                          key + "🔜 Reject「On/Off」" + "\n" + \
-                          key + "🔜 Chatsticker「On/Off」" + "\n" + \
-                          key + "🔜 Welcomeimg「On/Off」" + "\n" + \
-                          key + "🔜 Welcometext「On/Off」" + "\n" + \
-                          key + "🔜 Setwelcome:「Query」" + "\n" + \
-                          key + "🔜 Setmention:「Query」" + "\n" + \
-                          key + "🔜 Changename:「Query」" + "\n" + \
-                          key + "🔜 Changebio:「Query」" + "\n" + \
-                          "==>⚫ line.me/ti/p/~zainal_ariv ⚫<=="
+    helpSettings =  "⚔⚔⚔Hᴇʟᴘ sᴇᴛᴛɪɴɢs⚔⚔⚔" + "\n" + \
+                          key + "⚅ Add「On/Off」" + "\n" + \
+                          key + "⚅ Join「On/Off」" + "\n" + \
+                          key + "⚅ Ticket「On/Off」" + "\n" + \
+                          key + "⚅ Leave「On/Off」" + "\n" + \
+                          key + "⚅ Read「On/Off」" + "\n" + \
+                          key + "⚅ Respon「On/Off」" + "\n" + \
+                          key + "⚅ Contact「On/Off」" + "\n" + \
+                          key + "⚅ Post「On/Off」" + "\n" + \
+                          key + "⚅ Sticker「On/Off」" + "\n" + \
+                          key + "⚅ Unsend「On/Off」" + "\n" + \
+                          key + "⚅ Sider「On/Off」" + "\n" + \
+                          key + "⚅ Reject「On/Off」" + "\n" + \
+                          key + "⚅ Chatsticker「On/Off」" + "\n" + \
+                          key + "⚅ Welcomeimg「On/Off」" + "\n" + \
+                          key + "⚅ Welcometext「On/Off」" + "\n" + \
+                          key + "⚅ Namelock「On/Off」" + "\n" + \
+                          key + "⚅ Iconlock「On/Off」" + "\n" + \
+                          key + "⚅ Proqr「On/Off」" + "\n" + \
+                          key + "⚅ Url「On/Off」" + "\n" + \
+                          key + "⚅ Clear「On/Off」" + "\n" + \
+                          key + "⚅ Kick「On/Off」" + "\n" + \
+                          key + "⚅ Memberlock「On/Off」" + "\n" + \
+                          key + "⚅ Proinvite「On/Off」" + "\n" + \
+                          key + "⚅ Setwelcome:「Query」" + "\n" + \
+                          key + "⚅ Setmention:「Query」" + "\n" + \
+                          key + "⚅ Changename:「Query」" + "\n" + \
+                          key + "⚅ Changebio:「Query」" + "\n" + \
+                          key + "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+                          "http://line.me/ti/p/~teambotprotect"
     return helpSettings
 
 def helpmedia():
@@ -535,23 +545,28 @@ def helpmedia():
         key = key.title()
     else:
         key = ''
-    helpMedia =  "===>[[Help Media]]<===" + "\n" + \
-               key + "🔜 Ytmp3「Query」" + "\n" + \
-               key + "🔜 Horoscop「Query」" + "\n" + \
-               key + "🔜 Zodiak「Query」" + "\n" + \
-               key + "🔜 Ytmp4「Query」" + "\n" + \
-               key + "🔜 Google search「Query」" + "\n" + \
-               key + "🔜 Rr「Query」" + "\n" + \
-               key + "🔜 Checkdate「Date」" + "\n" + \
-               key + "🔜 Checkwebsite「url」" + "\n" + \
-               key + "🔜 Instainfo「Name」" + "\n" + \
-               key + "🔜 Instapost「Name」|「No」" + "\n" + \
-               key + "🔜 Instastory「Name」|「No」" + "\n" + \
-               key + "🔜 Youtube「Search」" + "\n" + \
-               key + "🔜 Music「Search」" + "\n" + \
-               key + "🔜 Lyric「Search」" + "\n" + \
-               key + "🔜 Image「Search」" + "\n" + \
-               "==>⚫ line.me/ti/p/~zainal_ariv ⚫<=="
+    helpMedia =  "⚔⚔⚔Hᴇʟᴘ Mᴇᴅɪᴀ⚔⚔⚔" + "\n" + \
+               key + "⚅ Ytmp3「Query」" + "\n" + \
+               key + "⚅ Horoscop「Query」" + "\n" + \
+               key + "⚅ Zodiak「Query」" + "\n" + \
+               key + "⚅ Ytmp4「Query」" + "\n" + \
+               key + "⚅ Google search「Query」" + "\n" + \
+               key + "⚅ Checkdate「Date」" + "\n" + \
+               key + "⚅ Checkwebsite「url」" + "\n" + \
+               key + "⚅ Hitung「no+×÷no」" + "\n" + \
+               key + "⚅ Mysticker" + "\n" + \
+               key + "⚅ Line id" + "\n" + \
+               key + "⚅ Instainfo「Name」" + "\n" + \
+               key + "⚅ Instapost「Name」|「No」" + "\n" + \
+               key + "⚅ Instastory「Name」|「No」" + "\n" + \
+               key + "⚅ Youtube「Search」" + "\n" + \
+               key + "⚅ Bokep「Search」" + "\n" + \
+               key + "⚅ Tulis「Search」" + "\n" + \
+               key + "⚅ Music「Search」" + "\n" + \
+               key + "⚅ Lyric「Search」" + "\n" + \
+               key + "⚅ Image「Search」" + "\n" + \
+               "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+               "http://line.me/ti/p/~teambotprotect"
     return helpMedia
 
 def helpgroup():
@@ -560,19 +575,22 @@ def helpgroup():
         key = key.title()
     else:
         key = ''
-    helpGroup =  "===>[[Help Group]]<===" + "\n" + \
-              key + "🔜 Creator" + "\n" + \
-              key + "🔜 Groupid" + "\n" + \
-              key + "🔜 Groupname" + "\n" + \
-              key + "🔜 Picture group" + "\n" + \
-              key + "🔜 Linkqr" + "\n" + \
-              key + "🔜 Qr「On/Off」" + "\n" + \
-              key + "🔜 Grouplist" + "\n" + \
-              key + "🔜 Member group" + "\n" + \
-              key + "🔜 Info group" + "\n" + \
-              key + "🔜 Setgroupimage" + "\n" + \
-              key + "🔜 Gn:「Query」" + "\n" + \
-              "==>⚫ line.me/ti/p/~zainal_ariv ⚫<=="
+    helpGroup =  "⚔⚔⚔Hᴇʟᴘ Gʀᴏᴜᴘ⚔⚔⚔" + "\n" + \
+              key + "⚅ Creator" + "\n" + \
+              key + "⚅ Groupid" + "\n" + \
+              key + "⚅ Groupname" + "\n" + \
+              key + "⚅ Picture group" + "\n" + \
+              key + "⚅ Linkqr" + "\n" + \
+              key + "⚅ Qr「On/Off」" + "\n" + \
+              key + "⚅ Grouplist" + "\n" + \
+              key + "⚅ Member group" + "\n" + \
+              key + "⚅ Nk" + "\n" + \
+              key + "⚅ Kickall" + "\n" + \
+              key + "⚅ Info group" + "\n" + \
+              key + "⚅ Setgroupimage" + "\n" + \
+              key + "⚅ Gn:「Query」" + "\n" + \
+              key + "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+              "http://line.me/ti/p/~teambotprotect"
     return helpGroup
 
 def helpbot():
@@ -581,30 +599,52 @@ def helpbot():
         key = key.title()
     else:
         key = ''
-    helpBot =  "===>[[Help BoT]]<===" + "\n" + \
-          key + "🔜 Listblock" + "\n" + \
-          key + "🔜 Block contact" + "\n" + \
-          key + "🔜 Unblockall" + "\n" + \
-          key + "🔜 Changepicture" + "\n" + \
-          key + "🔜 Tabok 「Mention」" + "\n" + \
-          key + "🔜 Say「Query」" + "\n" + \
-          key + "🔜 Addsticker" + "\n" + \
-          key + "🔜 Broadcast 「Query」" + "\n" + \
-          key + "🔜 Groupcast 「Query」" + "\n" + \
-          key + "🔜 Replay「On/Off」" + "\n" + \
-          key + "🔜 Replay List" + "\n" + \
-          key + "🔜 Replay add「Mention」" + "\n" + \
-          key + "🔜 Del replay「Mention」" + "\n" + \
-          key + "🔜 Tagall" + "\n" + \
-          key + "🔜 Lurking「On/Off/Reset」" + "\n" + \
-          key + "🔜 Lurking" + "\n" + \
-          key + "🔜 Gift" + "\n" + \
-          key + "🔜 Max:「no」" + "\n" + \
-          key + "🔜 Spamtext:「text」" + "\n" + \
-          key + "🔜 Setgroup:「text」" + "\n" + \
-          key + "🔜 Spamtag 「Mention」" + "\n" + \
-          key + "🔜 Call" + "\n" + \
-          "==>⚫ line.me/ti/p/~zainal_ariv ⚫<=="
+    helpBot =  "⚔⚔⚔Hᴇʟᴘ Bᴏᴛ⚔⚔⚔" + "\n" + \
+          key + "⚅ Listblock" + "\n" + \
+          key + "⚅ Block contact" + "\n" + \
+          key + "⚅ Unblockall" + "\n" + \
+          key + "⚅ Changepicture" + "\n" + \
+          key + "⚅ Respon" + "\n" + \
+          key + "⚅ In" + "\n" + \
+          key + "⚅ Bye" + "\n" + \
+          key + "⚅ Ghost in|lv" + "\n" + \
+          key + "⚅ Botlist" + "\n" + \
+          key + "⚅ Bot add 「Mention」" + "\n" + \
+          key + "⚅ Delbot 「Mention」" + "\n" + \
+          key + "⚅ Kick 「Mention」" + "\n" + \
+          key + "⚅ Kicker 「Mention」" + "\n" + \
+          key + "⚅ Bunuh 「Mention」" + "\n" + \
+          key + "⚅ Tabok 「Mention」" + "\n" + \
+          key + "⚅ Say「Query」" + "\n" + \
+          key + "⚅ B1 setpict" + "\n" + \
+          key + "⚅ B2 setpict" + "\n" + \
+          key + "⚅ B1 setname:「Query」" + "\n" + \
+          key + "⚅ B2 setname:「Query」" + "\n" + \
+          key + "⚅ B1 setbio:「Query」" + "\n" + \
+          key + "⚅ B2 setbio:「Query」" + "\n" + \
+          key + "⚅ B1 restore" + "\n" + \
+          key + "⚅ B2 restore" + "\n" + \
+          key + "⚅ Addsticker" + "\n" + \
+          key + "⚅ Ban 「Mention」" + "\n" + \
+          key + "⚅ Unban 「Mention」" + "\n" + \
+          key + "⚅ Cban" + "\n" + \
+          key + "⚅ Banlist" + "\n" + \
+          key + "⚅ Broadcast 「Query」" + "\n" + \
+          key + "⚅ Groupcast 「Query」" + "\n" + \
+          key + "⚅ Reply「On/Off」" + "\n" + \
+          key + "⚅ ReplyList" + "\n" + \
+          key + "⚅ Replyadd「Mention」" + "\n" + \
+          key + "⚅ Del reply「Mention」" + "\n" + \
+          key + "⚅ Tagall" + "\n" + \
+          key + "⚅ Lurking「On/Off/Reset」" + "\n" + \
+          key + "⚅ Lurking" + "\n" + \
+          key + "⚅ Gift" + "\n" + \
+          key + "⚅ Max:「no」" + "\n" + \
+          key + "⚅ Spamtext:「text」" + "\n" + \
+          key + "⚅ Spamtag 「Mention」" + "\n" + \
+          key + "⚅ Call" + "\n" + \
+          key + "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+          "http://line.me/ti/p/~teambotprotect"
     return helpBot
 
 def helptranslate():
@@ -612,117 +652,118 @@ def helptranslate():
         key = settings['keyCommand']
     else:
         key = ''
-    helpTranslate = "♻♻Help Trans♻♻" + "\n" + \
-                    key + "🔜 af : afrikaans" + "\n" + \
-                    key + "🔜 sq : albanian" + "\n" + \
-                    key + "🔜 am : amharic" + "\n" + \
-                    key + "🔜 ar : arabic" + "\n" + \
-                    key + "🔜 hy : armenian" + "\n" + \
-                    key + "🔜 az : azerbaijani" + "\n" + \
-                    key + "🔜 eu : basque" + "\n" + \
-                    key + "🔜 be : belarusian" + "\n" + \
-                    key + "🔜 bn : bengali" + "\n" + \
-                    key + "🔜 bs : bosnian" + "\n" + \
-                    key + "🔜 bg : bulgarian" + "\n" + \
-                    key + "🔜 ca : catalan" + "\n" + \
-                    key + "🔜 ceb : cebuano" + "\n" + \
-                    key + "🔜 ny : chichewa" + "\n" + \
-                    key + "🔜 zhcn : chinese (simplified)" + "\n" + \
-                    key + "🔜 zhtw : chinese (traditional)" + "\n" + \
-                    key + "🔜 co : corsican" + "\n" + \
-                    key + "🔜 hr : croatian" + "\n" + \
-                    key + "🔜 cs : czech" + "\n" + \
-                    key + "🔜 da : danish" + "\n" + \
-                    key + "🔜 nl : dutch" + "\n" + \
-                    key + "🔜 en : english" + "\n" + \
-                    key + "🔜 eo : esperanto" + "\n" + \
-                    key + "🔜 et : estonian" + "\n" + \
-                    key + "🔜 tl : filipino" + "\n" + \
-                    key + "🔜 fi : finnish" + "\n" + \
-                    key + "🔜 fr : french" + "\n" + \
-                    key + "🔜 fy : frisian" + "\n" + \
-                    key + "🔜 gl : galician" + "\n" + \
-                    key + "🔜 ka : georgian" + "\n" + \
-                    key + "🔜 de : german" + "\n" + \
-                    key + "🔜 el : greek" + "\n" + \
-                    key + "🔜 gu : gujarati" + "\n" + \
-                    key + "🔜 ht : haitian creole" + "\n" + \
-                    key + "🔜 ha : hausa" + "\n" + \
-                    key + "🔜 haw : hawaiian" + "\n" + \
-                    key + "🔜 iw : hebrew" + "\n" + \
-                    key + "🔜 hi : hindi" + "\n" + \
-                    key + "🔜 hmn : hmong" + "\n" + \
-                    key + "🔜 hu : hungarian" + "\n" + \
-                    key + "🔜 is : icelandic" + "\n" + \
-                    key + "🔜 ig : igbo" + "\n" + \
-                    key + "🔜 id : indonesian" + "\n" + \
-                    key + "🔜 ga : irish" + "\n" + \
-                    key + "🔜 it : italian" + "\n" + \
-                    key + "🔜 ja : japanese" + "\n" + \
-                    key + "🔜 jw : javanese" + "\n" + \
-                    key + "🔜 kn : kannada" + "\n" + \
-                    key + "🔜 kk : kazakh" + "\n" + \
-                    key + "🔜 km : khmer" + "\n" + \
-                    key + "🔜 ko : korean" + "\n" + \
-                    key + "🔜 ku : kurdish (kurmanji)" + "\n" + \
-                    key + "🔜 ky : kyrgyz" + "\n" + \
-                    key + "🔜 lo : lao" + "\n" + \
-                    key + "🔜 la : latin" + "\n" + \
-                    key + "🔜 lv : latvian" + "\n" + \
-                    key + "🔜 lt : lithuanian" + "\n" + \
-                    key + "🔜 lb : luxembourgish" + "\n" + \
-                    key + "🔜 mk : macedonian" + "\n" + \
-                    key + "🔜 mg : malagasy" + "\n" + \
-                    key + "🔜 ms : malay" + "\n" + \
-                    key + "🔜 ml : malayalam" + "\n" + \
-                    key + "🔜 mt : maltese" + "\n" + \
-                    key + "🔜 mi : maori" + "\n" + \
-                    key + "🔜 mr : marathi" + "\n" + \
-                    key + "🔜 mn : mongolian" + "\n" + \
-                    key + "🔜 my : myanmar (burmese)" + "\n" + \
-                    key + "🔜 ne : nepali" + "\n" + \
-                    key + "🔜 no : norwegian" + "\n" + \
-                    key + "🔜 ps : pashto" + "\n" + \
-                    key + "🔜 fa : persian" + "\n" + \
-                    key + "🔜 pl : polish" + "\n" + \
-                    key + "🔜 pt : portuguese" + "\n" + \
-                    key + "🔜 pa : punjabi" + "\n" + \
-                    key + "🔜 ro : romanian" + "\n" + \
-                    key + "🔜 ru : russian" + "\n" + \
-                    key + "🔜 sm : samoan" + "\n" + \
-                    key + "🔜 gd : scots gaelic" + "\n" + \
-                    key + "🔜 sr : serbian" + "\n" + \
-                    key + "🔜 st : sesotho" + "\n" + \
-                    key + "🔜 sn : shona" + "\n" + \
-                    key + "🔜 sd : sindhi" + "\n" + \
-                    key + "🔜 si : sinhala" + "\n" + \
-                    key + "🔜 sk : slovak" + "\n" + \
-                    key + "🔜 sl : slovenian" + "\n" + \
-                    key + "🔜 so : somali" + "\n" + \
-                    key + "🔜 es : spanish" + "\n" + \
-                    key + "🔜 su : sundanese" + "\n" + \
-                    key + "🔜 sw : swahili" + "\n" + \
-                    key + "🔜 sv : swedish" + "\n" + \
-                    key + "🔜 tg : tajik" + "\n" + \
-                    key + "🔜 ta : tamil" + "\n" + \
-                    key + "🔜 te : telugu" + "\n" + \
-                    key + "🔜 th : thai" + "\n" + \
-                    key + "🔜 tr : turkish" + "\n" + \
-                    key + "🔜 uk : ukrainian" + "\n" + \
-                    key + "🔜 ur : urdu" + "\n" + \
-                    key + "🔜 uz : uzbek" + "\n" + \
-                    key + "🔜 vi : vietnamese" + "\n" + \
-                    key + "🔜 cy : welsh" + "\n" + \
-                    key + "🔜 xh : xhosa" + "\n" + \
-                    key + "🔜 yi : yiddish" + "\n" + \
-                    key + "🔜 yo : yoruba" + "\n" + \
-                    key + "🔜 zu : zulu" + "\n" + \
-                    key + "🔜 fil : Filipino" + "\n" + \
-                    key + "🔜 he : Hebrew" + "\n" + \
+    helpTranslate = "⚔⚔⚔Hᴇʟᴘ Tʀᴀɴs⚔⚔⚔" + "\n" + \
+                    key + "⚅ af : afrikaans" + "\n" + \
+                    key + "⚅ sq : albanian" + "\n" + \
+                    key + "⚅ am : amharic" + "\n" + \
+                    key + "⚅ ar : arabic" + "\n" + \
+                    key + "⚅ hy : armenian" + "\n" + \
+                    key + "⚅ az : azerbaijani" + "\n" + \
+                    key + "⚅ eu : basque" + "\n" + \
+                    key + "⚅ be : belarusian" + "\n" + \
+                    key + "⚅ bn : bengali" + "\n" + \
+                    key + "⚅ bs : bosnian" + "\n" + \
+                    key + "⚅ bg : bulgarian" + "\n" + \
+                    key + "⚅ ca : catalan" + "\n" + \
+                    key + "⚅ ceb : cebuano" + "\n" + \
+                    key + "⚅ ny : chichewa" + "\n" + \
+                    key + "⚅ zhcn : chinese (simplified)" + "\n" + \
+                    key + "⚅ zhtw : chinese (traditional)" + "\n" + \
+                    key + "⚅ co : corsican" + "\n" + \
+                    key + "⚅ hr : croatian" + "\n" + \
+                    key + "⚅ cs : czech" + "\n" + \
+                    key + "⚅ da : danish" + "\n" + \
+                    key + "⚅ nl : dutch" + "\n" + \
+                    key + "⚅ en : english" + "\n" + \
+                    key + "⚅ eo : esperanto" + "\n" + \
+                    key + "⚅ et : estonian" + "\n" + \
+                    key + "⚅ tl : filipino" + "\n" + \
+                    key + "⚅ fi : finnish" + "\n" + \
+                    key + "⚅ fr : french" + "\n" + \
+                    key + "⚅ fy : frisian" + "\n" + \
+                    key + "⚅ gl : galician" + "\n" + \
+                    key + "⚅ ka : georgian" + "\n" + \
+                    key + "⚅ de : german" + "\n" + \
+                    key + "⚅ el : greek" + "\n" + \
+                    key + "⚅ gu : gujarati" + "\n" + \
+                    key + "⚅ ht : haitian creole" + "\n" + \
+                    key + "⚅ ha : hausa" + "\n" + \
+                    key + "⚅ haw : hawaiian" + "\n" + \
+                    key + "⚅ iw : hebrew" + "\n" + \
+                    key + "⚅ hi : hindi" + "\n" + \
+                    key + "⚅ hmn : hmong" + "\n" + \
+                    key + "⚅ hu : hungarian" + "\n" + \
+                    key + "⚅ is : icelandic" + "\n" + \
+                    key + "⚅ ig : igbo" + "\n" + \
+                    key + "⚅ id : indonesian" + "\n" + \
+                    key + "⚅ ga : irish" + "\n" + \
+                    key + "⚅ it : italian" + "\n" + \
+                    key + "⚅ ja : japanese" + "\n" + \
+                    key + "⚅ jw : javanese" + "\n" + \
+                    key + "⚅ kn : kannada" + "\n" + \
+                    key + "⚅ kk : kazakh" + "\n" + \
+                    key + "⚅ km : khmer" + "\n" + \
+                    key + "⚅ ko : korean" + "\n" + \
+                    key + "⚅ ku : kurdish (kurmanji)" + "\n" + \
+                    key + "⚅ ky : kyrgyz" + "\n" + \
+                    key + "⚅ lo : lao" + "\n" + \
+                    key + "⚅ la : latin" + "\n" + \
+                    key + "⚅ lv : latvian" + "\n" + \
+                    key + "⚅ lt : lithuanian" + "\n" + \
+                    key + "⚅ lb : luxembourgish" + "\n" + \
+                    key + "⚅ mk : macedonian" + "\n" + \
+                    key + "⚅ mg : malagasy" + "\n" + \
+                    key + "⚅ ms : malay" + "\n" + \
+                    key + "⚅ ml : malayalam" + "\n" + \
+                    key + "⚅ mt : maltese" + "\n" + \
+                    key + "⚅ mi : maori" + "\n" + \
+                    key + "⚅ mr : marathi" + "\n" + \
+                    key + "⚅ mn : mongolian" + "\n" + \
+                    key + "⚅ my : myanmar (burmese)" + "\n" + \
+                    key + "⚅ ne : nepali" + "\n" + \
+                    key + "⚅ no : norwegian" + "\n" + \
+                    key + "⚅ ps : pashto" + "\n" + \
+                    key + "⚅ fa : persian" + "\n" + \
+                    key + "⚅ pl : polish" + "\n" + \
+                    key + "⚅ pt : portuguese" + "\n" + \
+                    key + "⚅ pa : punjabi" + "\n" + \
+                    key + "⚅ ro : romanian" + "\n" + \
+                    key + "⚅ ru : russian" + "\n" + \
+                    key + "⚅ sm : samoan" + "\n" + \
+                    key + "⚅ gd : scots gaelic" + "\n" + \
+                    key + "⚅ sr : serbian" + "\n" + \
+                    key + "⚅ st : sesotho" + "\n" + \
+                    key + "⚅ sn : shona" + "\n" + \
+                    key + "⚅ sd : sindhi" + "\n" + \
+                    key + "⚅ si : sinhala" + "\n" + \
+                    key + "⚅ sk : slovak" + "\n" + \
+                    key + "⚅ sl : slovenian" + "\n" + \
+                    key + "⚅ so : somali" + "\n" + \
+                    key + "⚅ es : spanish" + "\n" + \
+                    key + "⚅ su : sundanese" + "\n" + \
+                    key + "⚅ sw : swahili" + "\n" + \
+                    key + "⚅ sv : swedish" + "\n" + \
+                    key + "⚅ tg : tajik" + "\n" + \
+                    key + "⚅ ta : tamil" + "\n" + \
+                    key + "⚅ te : telugu" + "\n" + \
+                    key + "⚅ th : thai" + "\n" + \
+                    key + "⚅ tr : turkish" + "\n" + \
+                    key + "⚅ uk : ukrainian" + "\n" + \
+                    key + "⚅ ur : urdu" + "\n" + \
+                    key + "⚅ uz : uzbek" + "\n" + \
+                    key + "⚅ vi : vietnamese" + "\n" + \
+                    key + "⚅ cy : welsh" + "\n" + \
+                    key + "⚅ xh : xhosa" + "\n" + \
+                    key + "⚅ yi : yiddish" + "\n" + \
+                    key + "⚅ yo : yoruba" + "\n" + \
+                    key + "⚅ zu : zulu" + "\n" + \
+                    key + "⚅ fil : Filipino" + "\n" + \
+                    key + "⚅ he : Hebrew" + "\n" + \
                     "\n" + \
-                    "🔜 Contoh : " + key + "tr-id cantik" + "\n" + \
+                    "⚅ Contoh : " + key + "tr-id dhenza" + "\n" + \
                     "\n" + \
-                    "♻♻line.me/ti/p/~zainal_ariv♻♻"
+                    key + "Sᴇʟғʙᴏᴛ ᴠ.10 By: TBP ˢᵏ" + "\n" + \
+                    "http://line.me/ti/p/~teambotprotect"
     return helpTranslate
 def cek(mid):
     if mid in ( clientMid):
@@ -1101,37 +1142,49 @@ async def clientBot(op):
 
                             elif cmd == "settings":
                                 try:
-                                    ret_ = "╔══[Status Selfbot]━━\n"
-                                    if settings["autoAdd"] == True: ret_ += "\n╠ Auto Add  🔛"
-                                    else: ret_ += "\n╠ Auto Add  📴"
-                                    if settings["autoJoin"] == True: ret_ += "\n╠ Auto Join  ??"
-                                    else: ret_ += "\n╠ Auto Join  📴"
-                                    if settings["autoLeave"] == True: ret_ += "\n╠ Auto Leave  🔛"
-                                    else: ret_ += "\n╠ Auto Leave  📴"
-                                    if settings["autoJoinTicket"] == True: ret_ += "\n╠ Join Ticket  🔛"
-                                    else: ret_ += "\n╠ Join Ticket  📴"
-                                    if settings["autoRead"] == True: ret_ += "\n╠ Auto Read  🔛"
-                                    else: ret_ += "\n╠ Auto Read  📴"
-                                    if settings["autoRespon"] == True: ret_ += "\n╠ Respon  🔛"
-                                    else: ret_ += "\n╠ Respon  📴"
-                                    if settings["checkContact"] == True: ret_ += "\n╠ Contact  🔛"
-                                    else: ret_ += "\n╠ Contact  📴"
-                                    if settings["checkPost"] == True: ret_ += "\n╠ Check Post  🔛"
-                                    else: ret_ += "\n╠ Check Post  📴"
-                                    if settings["checkSticker"] == True: ret_ += "\n╠ Check Sticker  🔛"
-                                    else: ret_ += "\n╠ Check Sticker  📴"
-                                    if settings["setKey"] == True: ret_ += "\n╠ Set Key  🔛"
-                                    else: ret_ += "\n╠ Set Key  📴"
-                                    if settings["unsendMessage"] == True: ret_ += "\n╠ Unsend Message  🔛"
-                                    else: ret_ += "\n╠ Unsend Message  📴"
-                                    if msg.to in cctv["cyduk"]: ret_ += "\n╠ Sider  🔛"
-                                    else: ret_ += "\n╠ Sider  📴"
-                                    if msg.to in settings["welcome"]: ret_ += "\n╠ Welcometext  🔛"
-                                    else: ret_ += "\n╠ Welcometext  📴"
-                                    if msg.to in settings["welcomeimg"]: ret_ += "\n╠ Welcomeimage  🔛"
-                                    else: ret_ += "\n╠ Welcomeimage  📴"
-                                    if msg.to in settings["autoPurge"]: ret_ += "\n╚══ AutoClear  🔛"
-                                    else: ret_ += "\n╚══ AutoClear  📴"
+                                    ret_ = "⚔⚔⚔Ststus Bot SKY⚔⚔⚔\n"
+                                    if settings["autoAdd"] == True: ret_ += "\n🔴 Auto Add  [+]"
+                                    else: ret_ += "\n⚫ Auto Add  [-]"
+                                    if settings["autoJoin"] == True: ret_ += "\n🔴 Auto Join  [+]"
+                                    else: ret_ += "\n⚫ Auto Join  [-]"
+                                    if settings["autoLeave"] == True: ret_ += "\n🔴 Auto Leave  [+]"
+                                    else: ret_ += "\n⚫ Auto Leave  [-]"
+                                    if settings["autoJoinTicket"] == True: ret_ += "\n🔴 Join Ticket  [+]"
+                                    else: ret_ += "\n⚫ Join Ticket  [-]"
+                                    if settings["autoRead"] == True: ret_ += "\n🔴 Auto Read  [+]"
+                                    else: ret_ += "\n⚫ Auto Read  [-]"
+                                    if settings["autoRespon"] == True: ret_ += "\n🔴 Respon  [+]"
+                                    else: ret_ += "\n⚫ Respon  [-]"
+                                    if settings["checkContact"] == True: ret_ += "\n🔴 Contact  [+]"
+                                    else: ret_ += "\n⚫ Contact  [-]"
+                                    if settings["checkPost"] == True: ret_ += "\n🔴 Check Post  [+]"
+                                    else: ret_ += "\n⚫ Check Post  [-]"
+                                    if settings["checkSticker"] == True: ret_ += "\n🔴 Check Sticker  [+]"
+                                    else: ret_ += "\n⚫ Check Sticker  [-]"
+                                    if settings["setKey"] == True: ret_ += "\n🔴 Set Key  [+]"
+                                    else: ret_ += "\n⚫ Set Key  [-]"
+                                    if settings["unsendMessage"] == True: ret_ += "\n🔴 Unsend Message  [+]"
+                                    else: ret_ += "\n⚫ Unsend Message  [-]"
+                                    if msg.to in cctv["cyduk"]: ret_ += "\n🔴 Sider  [+]"
+                                    else: ret_ += "\n⚫ Sider  [-]"
+                                    if msg.to in settings["welcome"]: ret_ += "\n🔴 Welcometext  [+]"
+                                    else: ret_ += "\n⚫ Welcometext  [-]"
+                                    if msg.to in settings["welcomeimg"]: ret_ += "\n🔴 Welcomeimage  [+]"
+                                    else: ret_ += "\n⚫ Welcomeimage  [-]"
+                                    if msg.to in settings["lockqr"]: ret_ += "\n🔴 Proqr  [+]"
+                                    else: ret_ += "\n⚫ Proqr  [-]"
+                                    if msg.to in settings["lockname"]: ret_ += "\n🔴 Namelock  [+]"
+                                    else: ret_ += "\n⚫ Namelock  [-]"
+                                    if msg.to in settings["lockicon"]: ret_ += "\n🔴 Iconlock  [+]"
+                                    else: ret_ += "\n⚫ Iconlock  [-]"
+                                    if msg.to in settings["lockinvite"]: ret_ += "\n🔴 Proinvite  [+]"
+                                    else: ret_ += "\n⚫ Proinvite  [-]"
+                                    if msg.to in settings["lockJoin"]: ret_ += "\n🔴 Joinlock  [+]"
+                                    else: ret_ += "\n⚫ Joinlock  [-]"
+                                    if msg.to in settings["lockMember"]: ret_ += "\n🔴 Memberlock  [+]"
+                                    else: ret_ += "\n⚫ Memberlock  [-]"
+                                    if msg.to in settings["autoPurge"]: ret_ += "\n🔴 AutoClear  [+]"
+                                    else: ret_ += "\n⚫ AutoClear  [-]"
                                     client.sendMessage(to, str(ret_))
                                 except Exception as e:
                                     client.sendMessage(msg.to, str(e))
